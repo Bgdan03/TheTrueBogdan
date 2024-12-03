@@ -1,0 +1,103 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #151515;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: left; /* Text leicht linksbündig */
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center; /* Zentriert den Container */
+}
+
+/* Profile Info Container */
+.profile-info {
+    display: flex; /* Bild und Text nebeneinander */
+    align-items: center; /* Vertikal ausrichten */
+    justify-content: center; /* Gesamtes Profil zentrieren */
+    gap: 20px; /* Abstand zwischen Bild und Text */
+    margin-bottom: 20px;
+}
+
+/* Profilbild */
+.profile-pic {
+    width: 100px; /* Größe des Profilbildes */
+    height: 100px;
+    border-radius: 50%; /* Rundes Profilbild */
+    object-fit: cover; /* Kein Verzerren */
+}
+
+/* Text neben dem Bild */
+.text-info {
+    display: flex;
+    flex-direction: column; /* Text untereinander */
+    justify-content: center; /* Vertikale Zentrierung */
+    text-align: left; /* Leicht linksbündig */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+p {
+    font-size: 18px;
+    margin: 0;
+    color: #bbb;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center; /* Zentriert die Links */
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    background-color: #555;
+    border-radius: 10px;
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon.discord {
+    background-image: url('https://seeklogo.com/images/D/discord-icon-new-2021-logo-09772BF096-seeklogo.com.png');
+}
+
+.social-icon.mail {
+    background-image: url('https://image.shutterstock.com/image-photo/image-260nw-2418935307.jpg');
+}
+
+.social-icon.reddit {
+    background-image: url('https://seeklogo.com/images/R/reddit-new-2023-logo-16086DD48B-seeklogo.com.png');
+}
+
+.social-icon.steam {
+    background-image: url('https://logosmarcas.net/wp-content/uploads/2020/11/Steam-Simbolo-650x366.jpg');
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+}
